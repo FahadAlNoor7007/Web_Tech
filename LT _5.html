@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academic Profile of Fahad Al Noor</title>
+    <meta name="description" content="Personal academic profile page">
+    <meta name="keywords" content="Student, CSE, Academic Profile, Portfolio, Internship">
+    <meta name="author" content="Fahad Al Noor">
+</head>
+<body>
+
+<header>
+    <h1>Fahad Al Noor</h1>
+
+    <nav>
+        <a href="#bio">Biography</a> |
+        <a href="#education">Education</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="bio">
+    <h2>Biography</h2>
+    <p>
+        I am a dedicated Computer Science student with strong interest in programming, web development, 
+        and cybersecurity. I enjoy solving technical problems and building real-world applications.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Educational Background</h2>
+
+    <table border="1">
+        <caption>Academic Qualifications</caption>
+
+        <thead>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>B.Sc. in CSE</td>
+                <td>ABC University</td>
+                <td>2026</td>
+                <td>3.85</td>
+            </tr>
+
+            <tr>
+                <td>HSC</td>
+                <td>XYZ College</td>
+                <td>2023</td>
+                <td>2.00</td>
+            </tr>
+
+            <tr>
+                <td>SSC</td>
+                <td>XYZ School</td>
+                <td>2020</td>
+                <td>3.00</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required 
+                   placeholder="Enter your full name" maxlength="50">
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required
+                   placeholder="example@mail.com">
+        </p>
+
+        <p>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="01XXXXXXXXX"
+                   pattern="01[0-9]{9}" maxlength="11">
+        </p>
+
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required
+                      placeholder="Write your message here..."
+                      maxlength="300"></textarea>
+        </p>
+
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>Email: fahad@example.com | Phone: 01XXXXXXXXX</p>
+</footer>
+
+</body>
+</html>
