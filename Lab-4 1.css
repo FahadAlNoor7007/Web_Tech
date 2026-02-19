@@ -1,0 +1,125 @@
+* {
+    font-family: "Times New Roman", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f6f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    width: 80%;
+    margin: 25px auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid darkblue;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 14px;
+}

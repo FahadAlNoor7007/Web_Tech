@@ -1,0 +1,119 @@
+* {
+    font-family: "Times New Roman", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+ul, ol, dl {
+    margin: 10px 0 20px 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+dd {
+    margin-left: 20px;
+    color: #555;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:active {
+    background-color: green;
+    color: white;
+}
+
+.box1, .box2, .box3, .block, .inline-block {
+    border-radius: 5px;
+}
+
+.box1 {
+    background-color: lightcoral;
+}
+
+.box2 {
+    background-color: lightseagreen;
+}
+
+.box3 {
+    background-color: lightgoldenrodyellow;
+}
+
+.block {
+    background-color: pink;
+}
+
+.inline {
+    background-color: yellow;
+}
+
+.inline-block {
+    background-color: orange;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
+}
