@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        let courses = ["Web", "Algo", "DS", "OS", "Math"];
+        courses.push("AI");
+        courses.pop();
+        courses.unshift("Compiler");
+        
+        for (let i = 0; i < courses.length; i++) {
+            document.write(courses[i] + " ");
+        }
+
+        let student = {
+            name: "Fahad Al Noor",
+            id: "23-52272-2",
+            dept: "CS",
+            cgpa: 3.8
+        };
+        document.write("<br><br>ID: " + student.id);
+
+        let list = [
+            student,
+            { name: "Jisan", id: "22-11111-1" },
+            { name: "Noor", id: "22-22222-2" }
+        ];
+
+        document.write("<br><br>List:<br>");
+        for (let k = 0; k < list.length; k++) {
+            document.write(list[k].name + " (" + list[k].id + ")<br>");
+        }
+    </script>
+</body>
+</html>

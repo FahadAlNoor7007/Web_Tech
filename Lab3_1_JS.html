@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        alert("Welcome to Web Technology");
+        console.log("Message Console.");
+        document.write("<h1>Lab Task 3</h1>");
+
+        let studentName = "Fahad Al Noor";
+        let studentAge = 24;
+        
+        document.write("Student: " + studentName + "<br>");
+        document.write("Age next year: " + (studentAge + 1) + "<br>");
+
+        let num1 = Number(prompt("Enter first number:"));
+        let num2 = Number(prompt("Enter second number:"));
+        
+        document.write("Sum: " + (num1 + num2) + "<br>");
+        document.write("Difference: " + (num1 - num2) + "<br>");
+        document.write("Product: " + (num1 * num2) + "<br>");
+
+        if (num1 % 2 === 0) {
+            document.write(num1 + " is even.");
+        } else {
+            document.write(num1 + " is odd.");
+        }
+    </script>
+</body>
+</html>
