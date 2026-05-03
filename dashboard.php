@@ -1,20 +1,17 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['user'])) {
-    header("Location: s_html.php");
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
     exit();
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-</head>
-<body>
-    <h2>Welcome, <?php echo $_SESSION['user']; ?>!</h2>
-    <p>This is your secure dashboard.</p>
-    <a href="logout.php">Logout</a>
-</body>
-</html>
+<h2>Welcome, <?php echo $_SESSION['user_name']; ?>!</h2>
+<p>You are successfully logged in.</p>
+
+<?php if (isset($_COOKIE['last_login'])): ?>
+    <p>Your last login was on: <?php echo $_COOKIE['last_login']; ?></p>
+<?php endif; ?>
+
+<a href="logout.php">Logout</a>
