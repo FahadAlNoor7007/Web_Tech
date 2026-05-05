@@ -2,57 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahad Al Noor | 23-52272-2</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>Student Info Fetch</title>
+    <style>
+        body { font-family: Arial; margin: 30px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            width: 320px;
+            background: #f9f9f9;
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <h2>Student Information System</h2>
+    <button onclick="getStudentData()">Fetch Student Info</button>
+    <div id="output"></div>
 
-    <header>
-        <nav>
-            <div class="logo">Fahad Al Noor</div>
-            <button id="modeToggle">Dark Mode</button>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <h1>Fahad Al Noor</h1>
-            <p>Student ID: 23-52272-2</p>
-            <p>Welcome to my web development portfolio. I enjoy creating responsive designs.</p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div id="projectContainer"></div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Name">
-                <span class="error" id="nameError"></span>
-
-                <input type="email" id="email" placeholder="Email">
-                <span class="error" id="emailError"></span>
-
-                <input type="text" id="subject" placeholder="Subject">
-                <span class="error" id="subjectError"></span>
-
-                <textarea id="message" placeholder="Message" rows="4"></textarea>
-                <span class="error" id="messageError"></span>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <button id="topBtn">↑</button>
-
-    <footer>
-        <p>Fahad Al Noor | ID: 23-52272-2 | © 2026</p>
-    </footer>
-
-    <script src="Logic.js"></script>
+    <script>
+        function getStudentData() {
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "student.php", true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    let student = JSON.parse(xhr.responseText);
+                    let output = document.getElementById("output");
+                    output.style.display = "block";
+                    output.innerHTML = 
+                        "<h3>Student Details</h3>" +
+                        "<p><strong>Name:</strong> " + student.name + "</p>" +
+                        "<p><strong>ID:</strong> " + student.id + "</p>" +
+                        "<p><strong>Department:</strong> " + student.department + "</p>" +
+                        "<p><strong>CGPA:</strong> " + student.cgpa + "</p>";
+                }
+            };
+            xhr.send();
+        }
+    </script>
 </body>
 </html>
