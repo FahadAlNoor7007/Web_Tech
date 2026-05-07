@@ -2,10 +2,10 @@
 header('Content-Type: application/json');
 
 $student = array(
-    "name" => "Abrar Ul Karim",
-    "id" => "221-15-5678",
+    "name" => "Fahad Al Noor",
+    "id" => "23-52272-2",
     "department" => "Computer Science and Engineering",
-    "cgpa" => "3.85"
+    "cgpa" => "3.81"
 );
 
 echo json_encode($student);
